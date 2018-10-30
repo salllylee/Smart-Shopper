@@ -1,0 +1,176 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Align search buttons */
+.center-buttons {
+  font-size: 40px;
+  width: 180px;
+  padding: 20px;
+
+  vertical-align: center;
+}
+
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+#home-button {
+  max-height: 65px;
+}
+
+#scan-button #search-button #recipes-button{
+  display: block;
+  margin-top: 10px;
+}
+
+/* Make add new look like clickable text */
+button.add-new {
+  cursor: pointer;
+  background:none;
+  border: none;
+
+  font-size: 14pt;
+}
+
+
+.buttons {
+    margin: 10%;
+    text-align: center;
+}
+
+/* Go back to the Homepage */
+.btn-back-homepage {
+  text-align: left;
+  font-size: 20px;
+  max-height: 30px;
+}
+
+/* Back buttons */
+.btn-back {
+  text-align: left;
+  font-size: 20px;
+  max-height: 30px;
+}
+
+.btn-hover {
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover.color-1 {
+    background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
+
+.btn-hover.color-2 {
+    background-image: linear-gradient(to right, #f5ce62, #e43603, #fa7199, #e85a19);
+    box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
+}
+
+/* Center the screens */
+div.center-screen {
+    height: 300px;
+    width: 400px;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -75px;
+}
+
+/* Center screen for search page */
+div.center-search {
+    height: 300px;
+    width: 333px;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -150px;
+}
+
+/* Header for Smart Shopper login screen */
+.header {
+  text-transform: uppercase;
+  font-family: "Trajan", Arial;
+  vertical-align: center;
+  text-align: center;
+  font-size: 300%;
+  padding: 40px;
+
+  background: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* To center aline the login buttons on bottom */
+.login {
+  vertical-align: text-bottom;
+  display: block;
+}
+
+/* Set the name cell on New-profile */
+#name-text {
+  text-align: left;
+  height: 21px;
+  font-size: 14pt;
+
+}
+
+/* General text for New-Profile */
+.profile-text {
+  text-align: left;
+  font-size: 200%;
+  max-height: 0px;
+}
+
+/* Button to take you to the results page */
+.to-results {
+  font-size: 20px;
+  max-height: 30px;
+  float: right;
+}
+
+/* Button to search screen */
+.to-search {}
+
+/* Button to scan screen */
+.to-scan {}
+
+/* Button to recipes screen */
+.to-recipes {}
+
+/* Button to go to search, scan, and recipes*/
+.to-scan-search-recipes {
+  font-size: 20px;
+  max-height: 30px;
+}
