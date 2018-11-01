@@ -15,26 +15,31 @@
       <button class="btn-back">Go Back</button>
     </div>
 
-    <div class="profile-text">
-      <h3>Name</h3>
-    </div>
-
     <div>
-      <input type="text" id="name-text" value="Enter Your Name...">
+      <h1 id="new-user-title">New User</h1>
     </div>
+    
+    <div class="center-new-profile">
+      <div class="profile-text">
+        <h5>List Name</h5>
+      </div>
 
-    <div class="profile-text">
-      <h3>Restrictions</h3>
+      <div>
+        <input type="text" onfocus="this.value=''" id="name-text" value="Name of your List...">
+      </div>
+
+      <div class="profile-text">
+        <h5>Restrictions</h5>
+      </div>
+        <button class="add-new">+ Add</button>
+
+
+      <div>
+        <button class="to-scan-search-recipes" id="create-user">Create List</button>
+      </div>
     </div>
-      <button class="add-new">+ Add New</button>
-    <div>
-
-    <div>
-      <button class="to-scan-search-recipes">Create User</button>
-    </div>
-
     <!-- Including JavaScript -->
-    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="javascript/Smart-Shopper.js"></script>
   </body>
 </html>
