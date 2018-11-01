@@ -19,6 +19,8 @@ button {
   appearance: none;
 }
 
+#create-user {}
+
 #home-button {
   max-height: 65px;
 }
@@ -28,15 +30,66 @@ button {
   margin-top: 10px;
 }
 
+#not-safe {
+  border-style: solid;
+  text-align: center;
+  width: 300px;
+}
+
+#result-img {
+  margin-left: 50px;
+}
+
+/* Button for removing an item */
+button.delete {
+  font-size: 18px;
+  color: #fff;
+  background-image: linear-gradient(to right, #007AFF, #007AFF, #007AFF, #007AFF);
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+  position: relative;
+  top: -1px;
+  font-weight: 600;
+  width: 15px;
+  height: 15px;
+  padding: 0px;
+
+  border-radius: 50px;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+
+  font-size: 10pt;
+}
+
 /* Make add new look like clickable text */
+button.add-new {
+  font-size: 18px;
+  color: #fff;
+  background-image: linear-gradient(to right, #007AFF, #007AFF, #007AFF, #007AFF);
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+
+  border-radius: 50px;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+/*
 button.add-new {
   cursor: pointer;
   background:none;
   border: none;
+  outline: none;
 
-  font-size: 14pt;
+  font-size: 18pt;
 }
-
+*/
 
 .buttons {
     margin: 10%;
@@ -106,6 +159,28 @@ div.center-screen {
     margin-left: -75px;
 }
 
+div.center-new-profile {
+    height: 300px;
+    width: 400px;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -225px;
+    margin-left: -75px;
+}
+
+div.center-results {
+  height: 300px;
+  width: 400px;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -250px;
+  margin-left: -150px;
+}
+
 /* Center screen for search page */
 div.center-search {
     height: 300px;
@@ -143,13 +218,54 @@ div.center-search {
   text-align: left;
   height: 21px;
   font-size: 14pt;
-
+  margin-top: -18px;
 }
+
+#search-text {
+  text-align: left;
+  height: 21px;
+  font-size: 14pt;
+  width: 333px;
+}
+
+#new-user-title {
+  font-size: 70px;
+  text-align: center;
+  margin-left: 74px;
+  margin-top: 34px;
+}
+/* Set the restriction cell on New-profile */
+.restriction-text {
+  text-align: left;
+  height: 21px;
+  font-size: 14pt;
+  margin-top: -18px;
+}
+
+/* Dietary restriction */
+.restriction {}
 
 /* General text for New-Profile */
 .profile-text {
   text-align: left;
   font-size: 200%;
+  max-height: 0px;
+}
+
+#check {
+  margin-left: 13px;
+  float: left;
+  color: #007AFF;
+
+  margin-top: 0px;
+  margin-left: 15px
+}
+
+#contains {
+}
+#scanner {
+  text-align: left;
+  font-size: 150%;
   max-height: 0px;
 }
 
@@ -173,4 +289,23 @@ div.center-search {
 .to-scan-search-recipes {
   font-size: 20px;
   max-height: 30px;
+  margin-left: 118px;
+}
+
+.helptxt {
+  text-align: center;
+  height: 5;
+}
+
+.close {
+  position: absolute;
+  right: 32px;
+  top: 18px;
+
+  font-size: 60px;
+
+  cursor: pointer;
+  background:none;
+  border: none;
+  outline: none;
 }
