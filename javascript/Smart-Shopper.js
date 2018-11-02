@@ -30,7 +30,7 @@ $(".btn-back").click(function(e) {
 });
 
 $(".btn-back-homepage").click(function(e) {
-  window.location="Smart-Shopper.html";
+  window.location="index.html";
 });
 
 $(".to-scan-search-recipes").click(function(e) {
