@@ -10,31 +10,52 @@
   <!-- Might include link href if adding .css files-->
 
 </head>
-  <body>
+  <body class="blury-background">
     <div>
-      <button class="btn-back">Go Back</button>
+      <button class="btn-back">
+        <h2 class="back-arrow">&#8249;<h3 class="back">&nbsp; Back</h3></h2>
+      </button>
     </div>
 
-    <div class="profile-text">
-      <h3>Name</h3>
-    </div>
+    <div class="center-new-profile">
+      <div>
+        <h1 id="new-user-title">New List</h1>
+      </div>
 
-    <div>
-      <input type="text" id="name-text" value="Enter Your Name...">
-    </div>
+      <div>
+        <h2>Choose&nbsp;a&nbsp;Preset&nbsp;List</h2>
+        <select id="presets">
+          <option value="none">None</option>
+          <option value="gluten">Gluten Free</option>
+          <option value="ketogenic">Ketogenic Diet</option>
+          <option value="vegan">Vegan</option>
+          <option value="vegetarian">Vegetarian diet</option>
+        </select>
+      </div>
 
-    <div class="profile-text">
-      <h3>Restrictions</h3>
-    </div>
-      <button class="add-new">+ Add New</button>
-    <div>
+      <div class="profile-text">
+        <h5>List Name</h5>
+      </div>
 
-    <div>
-      <button class="to-scan-search-recipes">Create User</button>
-    </div>
+      <div>
+        <input type="text" autofocus="autofocus" id="name-text" placeholder="Name of your List...">
+      </div>
 
+      <div class="profile-text">
+        <h5>Restrictions</h5>
+      </div>
+        <button id="add" class="add-new">+ Add</button>
+
+
+      <div>
+
+        <button class="to-scan-search-recipes" class="create-user">
+          <h3 class="continue">Continue <h2 class="arrow">&nbsp;&#8250;</h2></h3>
+        </button>
+      </div>
+    </div>
     <!-- Including JavaScript -->
-    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="javascript/Smart-Shopper.js"></script>
   </body>
 </html>
