@@ -79,6 +79,8 @@ button.delete {
   font-size: 10pt;
 }
 
+#add {}
+
 /* Make add new look like clickable text */
 button.add-new {
   font-size: 18px;
@@ -87,6 +89,8 @@ button.add-new {
   text-align:center;
   border: none;
   background-size: 300% 100%;
+
+  margin-top: -13px;
 
   border-radius: 50px;
   moz-transition: all .4s ease-in-out;
@@ -109,6 +113,19 @@ button.add-new {
 .buttons {
     margin: 10%;
     text-align: center;
+}
+
+/* Blury Background */
+body {
+
+  background: #F5F6F7 url("../images/produce.jpg");
+  background-size: 100% 100%;
+}
+
+#home-img {
+  background-image: url("../images/produce_banner.jpeg");
+  background-repeat: repeat-x;
+  background-size: 50% 15%;
 }
 
 /* Go back to the Homepage */
@@ -135,8 +152,19 @@ button.add-new {
   outline: none;
 }
 
+.btn-logout {
+  text-align: left;
+  font-size: 20px;
+  max-height: 30px;
+
+  cursor: pointer;
+  background:none;
+  border: none;
+  outline: none;
+}
+
 .btn-hover {
-    width: 200px;
+    width: 20%;
     font-size: 16px;
     font-weight: 600;
     color: #fff;
@@ -154,6 +182,30 @@ button.add-new {
     transition: all .4s ease-in-out;
 }
 
+#bar-white {
+  width:            100vw;
+  height:           100vh;
+  background:       #FFFDF9;
+
+  position: absolute;
+  top: 15%;
+  margin-left: -8px;
+  bottom: 10%px;
+  padding: 0px;
+}
+
+#bar-green {
+  width: 106vw;
+  height: 42vh;
+  background: #7AC28A;
+
+  position: absolute;
+  top: 62%;
+  margin-left: -8px;
+
+  padding: 0px;
+}
+
 .btn-hover:hover {
     background-position: 100% 0;
     moz-transition: all .4s ease-in-out;
@@ -163,13 +215,21 @@ button.add-new {
 }
 
 .btn-hover.color-1 {
-    background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
-    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+    background-image: linear-gradient(to right, #fa5a5a, #fb6d6d, #fd8484, #f99595);
+
+
+    position: absolute;
+    top: 42%;
+    left: 25%;
 }
 
 .btn-hover.color-2 {
-    background-image: linear-gradient(to right, #f5ce62, #e43603, #fa7199, #e85a19);
-    box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
+    background-image: linear-gradient(to right, #fa5a5a 0%, #f99595 100%);
+
+
+    position: absolute;
+    top: 42%;
+    right: 25%;
 }
 
 /* Center the screens */
@@ -189,10 +249,20 @@ div.center-new-profile {
     width: 400px;
 
     position: fixed;
-    top: 50%;
-    left: 50%;
-    margin-top: -225px;
+    top: 1%;
+    left: 45%;
     margin-left: -75px;
+}
+
+div.left-new-profile {
+  height: 300px;
+  width: 400px;
+
+  position: fixed;
+  top: 50%;
+  left: 10%;
+  margin-top: -225px;
+  margin-left: -75px;
 }
 
 div.center-results {
@@ -221,13 +291,17 @@ div.center-search {
 /* Header for Smart Shopper login screen */
 .header {
   text-transform: uppercase;
-  font-family: "Trajan", Arial;
+  font-family: "Simplifica";
   vertical-align: center;
   text-align: center;
-  font-size: 300%;
+  font-size: 90px;
   padding: 40px;
+  margin-top: 25px;
+  position: relative;
+  top: 10%;
+  left: 0%;
 
-  background: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
+  background: #000000;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -241,7 +315,7 @@ div.center-search {
 /* Set the name cell on New-profile */
 #name-text {
   text-align: left;
-  height: 21px;
+  height: 23px;
   font-size: 14pt;
   margin-top: -18px;
 }
@@ -256,15 +330,19 @@ div.center-search {
 #new-user-title {
   font-size: 70px;
   text-align: center;
-  margin-left: 74px;
-  margin-top: 34px;
+  margin-left: -44%;
+  margin-top: 6%;
 }
 /* Set the restriction cell on New-profile */
-.restriction-text {
+#restriction-text {
   text-align: left;
   height: 21px;
   font-size: 14pt;
-  margin-top: -18px;
+  margin-top: -13px;
+}
+
+.restrictions {
+  margin-top: -13px;
 }
 
 /* Dietary restriction */
@@ -275,6 +353,13 @@ div.center-search {
   text-align: left;
   font-size: 200%;
   max-height: 0px;
+  margin-top: -8px;
+}
+
+#presets {
+  margin-top: -20px;
+  width: 156px;
+  font-size: 15px;
 }
 
 #check {
@@ -315,6 +400,8 @@ div.center-search {
   font-size: 200%;
   height: 20px;
 }
+
+
 .arrow {
   color: #007AFF;
 
@@ -340,9 +427,19 @@ div.center-search {
   outline: none;
 }
 
+@font-face {
+  font-family:"Simplifica";
+  src: url("../SIMPLIFICA/Simplifica_Typeface.ttf") format("truetype");
+}
+
 .helptxt {
   text-align: center;
   height: 5;
+  margin-top
+}
+
+#mvhelptxt {
+  margin-top: -5vh;
 }
 
 .close {
@@ -356,4 +453,92 @@ div.center-search {
   background:none;
   border: none;
   outline: none;
+}
+
+.create-account-text {
+  text-align: left;
+  height: 21px;
+  font-size: 14pt;
+  margin-top: -18px;
+  width: 300px;
+  float: left;
+}
+
+.to-lists {
+  font-size: 20px;
+  max-height: 30px;
+  float: right;
+  margin-right: -1vw;
+  margin-top: -6vh;
+
+  cursor: pointer;
+  background:none;
+  border: none;
+  outline: none;
+}
+
+/**************** All on index for the tab login ***********/
+.center-tabcontent {
+  height: 36%;
+  width: 49%;
+
+  position: absolute;
+  top: 22%;
+  left: 26%;
+}
+
+.tabcontent {
+
+  display: none;
+}
+
+.tablinks {
+    background-color: #737070;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 50%;
+}
+
+.tablinks:hover {
+    background-color: #845252;
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #845252;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #4a4a4a;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
 }
