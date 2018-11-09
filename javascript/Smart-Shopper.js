@@ -123,6 +123,28 @@ $(".btn-back-homepage").click(function(e) {
   window.location="lists.html";
 });
 
+$("#pops").click(function() {
+  localStorage.setItem("imageName", "images/Pops.png");
+
+  window.location="Scan.html";
+});
+
+$("#oreos").click(function() {
+  localStorage.setItem("imageName", "images/Oreos.png");
+
+  window.location="Scan.html";
+});
+
+$("#wine").click(function() {
+  localStorage.setItem("imageName", "images/Wine.png");
+
+  window.location="Scan.html";
+});
+
+function chooseImage() {
+    $("#result-img").attr("src", localStorage.getItem("imageName"));
+}
+
 $(".btn-logout").click(function(e) {
   window.location="index.html";
 });
@@ -132,7 +154,7 @@ $(".to-scan-search-recipes").click(function(e) {
 });
 
 $(".to-scan").click(function(e) {
-  window.location="Scan.html";
+  window.location="Prescan.html";
 });
 
 $(".to-search").click(function(e) {

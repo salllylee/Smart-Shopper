@@ -232,6 +232,38 @@ body {
     right: 25%;
 }
 
+#prescan-text {
+  text-align: center;
+
+  margin-top: 10%;
+}
+
+.prescan-position {
+  margin-top: -18px;
+}
+
+#pops {
+  align: center;
+  width: 100px;
+  height: 100px;
+  left: 10%;
+}
+
+#oreos {
+  align: center;
+  width: 100px;
+  height: 100px;
+  left: 10%;
+}
+
+#wine {
+  align: center;
+  width: 100px;
+  height: 100px;
+  left: 10%;
+}
+
+
 /* Center the screens */
 div.center-screen {
     height: 300px;
@@ -241,6 +273,27 @@ div.center-screen {
     top: 50%;
     left: 50%;
     margin-top: -150px;
+    margin-left: -75px;
+}
+
+div.center-screen-pre {
+  height: 300px;
+  width: 400px;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -150px;
+  margin-left: -75px;
+}
+
+div.center-recipes {
+    height: 300px;
+    width: 600px;
+
+    position: fixed;
+    top: 5%;
+    left: 35%;
     margin-left: -75px;
 }
 
@@ -320,9 +373,14 @@ div.center-search {
   margin-top: -18px;
 }
 
+.recipes {
+  font-size: 30px;
+  margin-top: 5px;
+}
+
 #search-text {
   text-align: left;
-  height: 21px;
+  height: 25px;
   font-size: 14pt;
   width: 333px;
 }
@@ -371,8 +429,14 @@ div.center-search {
   margin-left: 15px
 }
 
-#contains {
+#contains {}
+
+#scan-img {
+  position: absolute;
+  top: 50%;
+  left: 41%;
 }
+
 #scanner {
   text-align: left;
   font-size: 150%;
@@ -440,6 +504,13 @@ div.center-search {
 
 #mvhelptxt {
   margin-top: -5vh;
+}
+
+#about {
+  position: absolute;
+  top: 5vh;
+  left: 25%;
+  width: 50%;
 }
 
 .close {
