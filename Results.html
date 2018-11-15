@@ -13,7 +13,7 @@
   <body>
     <div class="center-results">
       <div>
-        <img src="images/pops.jpg" width="200" height="200" id="result-img">
+        <img width="200" src="" height="200" id="result-img"/>
       </div>
 
       <div>
@@ -21,16 +21,37 @@
       </div>
 
       <div>
-        <h2 ><br>Contains:<br></h2>
+        <h2 id="containing"><br>Contains:<br></h2>
         <h2 id="check">&#10004; <h2 id="contains">&nbsp;Gluten</h2></h2>
+      </div>
+
+      <div>
+        <a id="dummy" class="recipes" href="Recipes.html">Recipes for this product!</a>
       </div>
     </div>
 
     <button class="close">&#10005;</button>
 
-
     <!-- Including JavaScript -->
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="javascript/Smart-Shopper.js"></script>
+    <script>
+      $("#result-img").attr("src", localStorage.getItem("imageName"));
+      var imgName = localStorage.getItem("imageName");
+
+      if (imgName == "images/Wine.png") {
+        document.getElementById("check").replaceWith("");
+        document.getElementById("contains").replaceWith("");
+        document.getElementById("containing").replaceWith("");
+        document.getElementById("not-safe").innerText = "! SAFE TO DRINK !";
+      }
+      else if (imgName != "images/Pops.png" && imgName != "images/Oreos.png") {
+        document.getElementById("check").replaceWith("");
+        document.getElementById("contains").replaceWith("");
+        document.getElementById("containing").replaceWith("");
+        document.getElementById("dummy").replaceWith("");
+        document.getElementById("not-safe").innerText = "PRODUCT NOT FOUND";
+      }
+    </script>
   </body>
 </html>
